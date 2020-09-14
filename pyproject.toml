@@ -5,7 +5,7 @@ description = "Library for applying Leipzig Glossing Rules to Thesaurus Linguae 
 authors = ["Dr. Daniel Werning <daniel.werning@bbaw.de>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7.3"
 
 [tool.poetry.dev-dependencies]
 ipython = "^7.9.0"
