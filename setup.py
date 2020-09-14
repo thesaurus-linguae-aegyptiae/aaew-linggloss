@@ -17,7 +17,7 @@ setup(
     name='aaew-linggloss',
     version='0.0.1',
     description='Library for applying Leipzig Glossing Rules to Thesaurus Linguae Aegyptiae (TLA) lemma occurrences',
-    python_requires='==3.*,>=3.8.0',
+    python_requires='==3.*,>=3.7.3',
     author='Dr. Daniel Werning',
     author_email='daniel.werning@bbaw.de',
     packages=['aaew_linggloss', 'aaew_linggloss.tests'],
