@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aaew-linggloss"
-version = "0.0.1"
+version = "0.0.2"
 description = "Library for applying Leipzig Glossing Rules to Thesaurus Linguae Aegyptiae (TLA) lemma occurrences"
 authors = ["Dr. Daniel Werning <daniel.werning@bbaw.de>"]
 
