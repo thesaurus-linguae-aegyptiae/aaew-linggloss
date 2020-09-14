@@ -15,7 +15,7 @@ readme = ''
 setup(
     long_description=readme,
     name='aaew-linggloss',
-    version='0.0.1',
+    version='0.0.2',
     description='Library for applying Leipzig Glossing Rules to Thesaurus Linguae Aegyptiae (TLA) lemma occurrences',
     python_requires='==3.*,>=3.7.3',
     author='Dr. Daniel Werning',
