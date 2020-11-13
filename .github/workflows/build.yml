@@ -1,0 +1,36 @@
+name: build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9]
+
+    steps:
+
+    - name: check out code
+      uses: actions/checkout@v2
+
+    - name: set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: run pytest
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest
+        pytest --doctest-modules aaew_linggloss
+
+    - name: build and install
+      run: |
+        pip install .
