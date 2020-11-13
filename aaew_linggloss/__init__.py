@@ -68,13 +68,17 @@ def stemType (sub_pos):
     return ''
 
 
-def computeLingGlossing(flexcode, lemmaID, pos_dot_subpos):
+## Hauptfunktion
+## flexcode: BTS flexcode
+## lemmaID: BTS lemma ID
+## pos_subpos: BTS pos type/subtype; python dictionary {'type': "___", 'subtype': "___"} 
+def computeLingGlossing(flexcode, lemmaID, pos_subpos):
     logFile = None # kein Error Log ausgeben
     pos = ''
     sub_pos =''
 
-    if pos_dot_subpos:
-        posParts = pos_dot_subpos
+    if pos_subpos:
+        posParts = pos_subpos
         pos = posParts.get('type')
         if len(posParts) > 1:
             sub_pos = posParts.get('subtype')
