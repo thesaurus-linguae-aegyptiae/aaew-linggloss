@@ -68,11 +68,12 @@ def stemType (sub_pos):
     return ''
 
 
-## Hauptfunktion
-## flexcode: BTS flexcode
-## lemmaID: BTS lemma ID
-## pos_subpos: BTS pos type/subtype; python dictionary {'type': "___", 'subtype': "___"} 
-def computeLingGlossing(flexcode, lemmaID, pos_subpos):
+def computeLingGlossing(flexcode: int, lemmaID: str, pos_subpos: dict):
+    """ Apply Leipzig Glossing Rules to Part of Speech and flexion information of a lemma occurrence.
+    :param flexcode: BTS flexcode
+    :param lemmaID: BTS lemma ID
+    :param pos_subpos: BTS part of speech type/subtype; python dictionary with ``type`` and optional ``subtype`` key
+    """
     logFile = None # kein Error Log ausgeben
     pos = ''
     sub_pos =''
