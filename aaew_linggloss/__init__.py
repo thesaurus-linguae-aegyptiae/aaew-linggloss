@@ -1,3 +1,4 @@
+from .bts import resolve_flexcode
 from .mapping import (
     lingGlossFromLemmaIDDict,
     dictPOSGlossings,

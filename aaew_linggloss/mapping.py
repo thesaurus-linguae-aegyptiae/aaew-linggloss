@@ -1,3 +1,20 @@
+import os
+import json
+import pkg_resources
+
+
+def load_mapping_file(filename: str) -> dict:
+    """ load mapping file containing a single JSON object with any number of key-value pairs
+    from this module's ``data`` subdirectory.
+
+    :param filename: name of the JSON file
+    """
+    with pkg_resources.resource_stream(__name__, os.path.join('data', filename)) as f:
+        return json.load(f)
+
+
+FLEXCODES = load_mapping_file('flexcodes.json')
+
 lingGlossFromLemmaIDDict = {
     # Personalpronomina
     "10030": "-1sg",
