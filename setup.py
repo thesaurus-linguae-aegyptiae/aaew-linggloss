@@ -22,7 +22,7 @@ setup(
     author_email='daniel.werning@bbaw.de',
     packages=['aaew_linggloss', 'aaew_linggloss.tests'],
     package_dir={"": "."},
-    package_data={},
+    package_data={"aaew_linggloss": ["data/*.json"]},
     install_requires=[],
     extras_require={"dev": ["dephell==0.*,>=0.8.3", "ipython==7.*,>=7.9.0", "pytest==5.*,>=5.2.2"]},
 )
