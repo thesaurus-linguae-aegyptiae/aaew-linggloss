@@ -379,7 +379,7 @@ dictSubPOSGlossings = {
 }
 
 dictPOSGlossingsDefault = {
-    "adjective": "ADJ:m.sg",
+    "adjective": "ADJ",
     "adverb": "ADV",
     "entity_name": "N",
     "epitheton_title": "N",
@@ -389,7 +389,7 @@ dictPOSGlossingsDefault = {
     "preposition": "PREP",
     "pronoun": "PRON",
     "root": "ROOT",
-    "substantive": "N.m:sg",
+    "substantive": "N",
     "undefined": "(undefined)",
     "verb": "V",
     "non valid lemma": "(invalid)"
