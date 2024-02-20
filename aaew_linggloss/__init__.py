@@ -116,8 +116,8 @@ def computeLingGlossing(flexcode: int, lemmaID: str, pos_subpos: dict):
         #elif flexcode == 4: glossing += '(flex: unclear)'
         #elif flexcode == 5: glossing += '(flex: problematic)'
         #elif flexcode == 9: glossing += '(flex: to be reviewed)'
-        if flexcode == 3:
-            glossing = defaultFlexFromPOS(pos, sub_pos)
+        #if flexcode == 3: # only iff sentence is morphologically tagged, cannot be made sure at the moment
+        #    glossing = defaultFlexFromPOS(pos, sub_pos)
         if glossing == '':
             if flexcode == 0: glossing = '(unedited)'
             elif flexcode == 1: glossing = '(?)'
