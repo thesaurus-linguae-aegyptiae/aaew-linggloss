@@ -114,7 +114,7 @@ def computeLingGlossing(flexcode: int, lemmaID: str, pos_subpos: dict):
         elif flexcode == 2: glossing += '(infl. ?)'
         elif flexcode == 3: # '(not specified)',  only iff sentence is morphologically tagged, otherwise '3' is misleading
             glossing = defaultFlexFromPOS(pos, sub_pos)
-            if glossing == '': glossing = '(infl. not specified)'
+            if glossing == '': glossing = '(infl. unspecified)'
         elif flexcode == 4: glossing += '(unclear)'
         elif flexcode == 5: glossing += '(problematic)'
         elif flexcode == 9: glossing += '(to be reviewed)' 
