@@ -389,6 +389,7 @@ dictPOSGlossingsDefault = {
     "particle": "PTCL",
     "preposition": "PREP",
     "pronoun": "PRON",
+    "punctuation": "PUNCT",
     "root": "ROOT",
     "substantive": "N",
     "undefined": "(undefined)",
