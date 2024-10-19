@@ -109,23 +109,15 @@ def computeLingGlossing(flexcode: int, lemmaID: str, pos_subpos: dict):
     # Status-Codes
     if (flexcode >= 0) and (flexcode <= 9):
         glossing = lingGlossFromPOS(pos, sub_pos)
-        #if flexcode == 0: glossing += '(flex: unedited)'
-        #elif flexcode == 1: glossing += '(flex: ?)'
-        #elif flexcode == 2: glossing += '(flex: ?)'
-        #elif flexcode == 3: glossing += '(flex: not specified)'
-        #elif flexcode == 4: glossing += '(flex: unclear)'
-        #elif flexcode == 5: glossing += '(flex: problematic)'
-        #elif flexcode == 9: glossing += '(flex: to be reviewed)'
-        if flexcode == 3: # only iff sentence is morphologically tagged, cannot be made sure at the moment
+        if flexcode == 0: +glossing = '(infl. unedited)' # unedited
+        elif flexcode == 1: +glossing = '(infl. ?)'
+        elif flexcode == 2: +glossing = '(infl. ?)'
+        elif flexcode == 3: # '(not specified)',  only iff sentence is morphologically tagged, otherwise '3' is misleading
             glossing = defaultFlexFromPOS(pos, sub_pos)
-        if glossing == '':
-            if flexcode == 0: glossing = '(unedited)'
-            elif flexcode == 1: glossing = '(?)'
-            elif flexcode == 2: glossing = '(?)'
-            elif flexcode == 3: glossing = '—'
-            elif flexcode == 4: glossing = '(unclear)'
-            elif flexcode == 5: glossing = '(problematic)'
-            elif flexcode == 9: glossing = '(to be reviewed)'
+            if glossing == '': glossing = '(infl. not specified)'
+        elif flexcode == 4: +glossing = '(unclear)'
+        elif flexcode == 5: +glossing = '(problematic)'
+        elif flexcode == 9: +glossing = '(to be reviewed)' 
 
     # Suffixkonjugation
     elif ((flex // 10000) == 1) or (((flex // 1000) >= 82) and ((flex // 1000) <= 87)):
