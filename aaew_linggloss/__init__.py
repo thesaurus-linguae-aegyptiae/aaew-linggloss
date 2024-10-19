@@ -109,15 +109,15 @@ def computeLingGlossing(flexcode: int, lemmaID: str, pos_subpos: dict):
     # Status-Codes
     if (flexcode >= 0) and (flexcode <= 9):
         glossing = lingGlossFromPOS(pos, sub_pos)
-        if flexcode == 0: +glossing = '(infl. unedited)' # unedited
-        elif flexcode == 1: +glossing = '(infl. ?)'
-        elif flexcode == 2: +glossing = '(infl. ?)'
+        if flexcode == 0: glossing += '(infl. unedited)' # unedited
+        elif flexcode == 1: glossing += '(infl. ?)'
+        elif flexcode == 2: glossing += '(infl. ?)'
         elif flexcode == 3: # '(not specified)',  only iff sentence is morphologically tagged, otherwise '3' is misleading
             glossing = defaultFlexFromPOS(pos, sub_pos)
             if glossing == '': glossing = '(infl. not specified)'
-        elif flexcode == 4: +glossing = '(unclear)'
-        elif flexcode == 5: +glossing = '(problematic)'
-        elif flexcode == 9: +glossing = '(to be reviewed)' 
+        elif flexcode == 4: glossing += '(unclear)'
+        elif flexcode == 5: glossing += '(problematic)'
+        elif flexcode == 9: glossing += '(to be reviewed)' 
 
     # Suffixkonjugation
     elif ((flex // 10000) == 1) or (((flex // 1000) >= 82) and ((flex // 1000) <= 87)):
