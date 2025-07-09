@@ -319,6 +319,7 @@ lingGlossFromLemmaIDDict = {
 dictPOSGlossings = {
     "adjective": "ADJ",
     "adverb": "ADV",
+    "determiner": "DET",
     "entity_name": "N",
     "epitheton_title": "N",
     "interjection": "INTJ",
@@ -382,6 +383,7 @@ dictSubPOSGlossings = {
 dictPOSGlossingsDefault = {
     "adjective": "ADJ",
     "adverb": "ADV",
+    "determiner": "DET",
     "entity_name": "N",
     "epitheton_title": "N",
     "interjection": "INTJ",
