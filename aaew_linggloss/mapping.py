@@ -337,6 +337,7 @@ dictPOSGlossings = {
 
 dictSubPOSGlossings = {
     "animal_name": "PROPN",
+    "article": "ART",
     "artifact_name": "PROPN",
     "cardinal": "NUM.card",
     "demonstrative_pronoun": "DEM",
@@ -401,6 +402,7 @@ dictPOSGlossingsDefault = {
 
 dictSubPOSGlossingsDefault = {
     "animal_name": "PROPN",
+    "article": "ART",
     "artifact_name": "PROPN",
     "cardinal": "NUM.card",
     "demonstrative_pronoun": "DEM",

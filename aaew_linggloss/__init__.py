@@ -26,7 +26,7 @@ def lingGlossFromPOS(pos, sub_pos):
             return lingGloss
     if pos != '':
         lingGloss = dictPOSGlossings.get(pos)
-        if lingGloss != '':
+        if lingGloss:
             return lingGloss
     return ''
 
