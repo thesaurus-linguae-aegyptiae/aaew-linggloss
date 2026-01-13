@@ -9796,5 +9796,14 @@
   "96438": "Aux.wn.ḫr.stpr.2pl_(Prep)_Verb",
   "-96438": "Aux.wn.ḫr.stpr.2du_(Prep)_Verb",
   "96439": "Aux.wn.ḫr.stpr.3pl_(Prep)_Verb",
-  "-96439": "Aux.wn.ḫr.stpr.3du_(Prep)_Verb"
+  "-96439": "Aux.wn.ḫr.stpr.3du_(Prep)_Verb",
+  "13930": "SC.pass.gem.impers_Aux.jw",
+  "16940": "SC.w.pass.impers_Aux.wn.jn",
+  "60401": "Verbal.noun.wt/jt.1sg",
+  "81108": "Rel.pr.sgm.stpr.2pl",
+  "81109": "Rel.pr.sgm.stpr.3pl",
+  "81204": "Rel.pr.sgf.stpr.3sgm",
+  "81309": "Rel.pr.plm.stpr.3pl",
+  "82800": "SC.n.act.ngem.imper_Neg.bw",
+  "115040": "SC.pass.ngem.nom.subj_Neg.n_Aux.wn"
 }
