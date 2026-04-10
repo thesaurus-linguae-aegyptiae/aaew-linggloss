@@ -678,6 +678,11 @@ def computeLingGlossing(flexcode: int, lemmaID: str, pos_subpos: dict):
 
             #Suffixe
             state = stateFromSuffix (flexcode)
+        elif stateFlex == 5: # neu im Adj.-Satz 
+            state = ''
+            glossing = 'ADJ'
+            if flex != 500:
+                if logFile: logFile.write('\n'+pos+'\t'+str(sub_pos)+'\t'+str(flexcode)+'\tError: Invalid adjective flexcode (number/gender for bare adj. in adj. sentence; 71500): '+str(flexcode))
         else:
             if logFile: logFile.write('\n'+pos+'\t'+str(sub_pos)+'\t'+str(flexcode)+'\tError: Invalid adjective flexcode (number/gender; pattern 71[0-2][0-6]x): '+str(flexcode))
         flex = flex % 10 # erste Stelle abschneiden, state-Info weg
